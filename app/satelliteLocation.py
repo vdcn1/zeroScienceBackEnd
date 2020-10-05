@@ -13,6 +13,13 @@ API_KEY = "6GESWN-ABKBH6-CFMN7U-4KDO"
 frameinfo = getframeinfo(currentframe())
 
  
+config_sa = {observer_lat: -8.7832, observer_lng: -55.4915, observer_alt: 74.042, search_radius: 5}
+config_af = {observer_lat: -8.7832, observer_lng: 34.5085, observer_alt: 74.042, search_radius: 5}
+config_as = {observer_lat: 34.0479, observer_lng: 100.6197, observer_alt: 74.042, search_radius: 5}
+config_na = {observer_lat: 54.5260, observer_lng: -105.2551, observer_alt: 74.042, search_radius: 5}
+config_eu = {observer_lat: 34.0479, observer_lng: -00.6197, observer_alt: 74.042, search_radius: 5}
+
+config = [config_sa,config_af,config_as,config_na,config_eu]
 
 list_country = ["config_sa.toml","config_na.toml","config_af.toml","config_eu.toml","config_as.toml"]
 
@@ -114,12 +121,8 @@ def get_all(filename, debug=False):
 
 def get_near(debug):
     all_data = []
-    for i in list_country:
+    for i in range(5):
         print("in list...")
-        if path.exists(i):
-            base_params = toml.loads(open(i).read())
-        else:
-            print("Error: " + i + " not found!")
-            exit()
+        base_params = config[i]
         all_data.append(get_list_sat(debug, base_params))
     return all_data
