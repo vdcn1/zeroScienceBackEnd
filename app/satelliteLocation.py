@@ -125,4 +125,5 @@ def get_near(debug):
         print("in list...")
         base_params = config[i]
         all_data.append(get_list_sat(debug, base_params))
+    print(all_data)
     return all_data
