@@ -1,5 +1,3 @@
-API_KEY = "6GESWN-ABKBH6-CFMN7U-4KDO"
-
 import requests
 import toml
 from sys import argv, exit
@@ -8,6 +6,7 @@ from inspect import currentframe, getframeinfo
 from flask import Flask
 import json
 app = Flask(__name__)
+
 
 API_KEY = "6GESWN-ABKBH6-CFMN7U-4KDO"
 # Load basic query parameters from 'config.toml'
