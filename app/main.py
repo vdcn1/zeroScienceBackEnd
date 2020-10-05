@@ -1,7 +1,7 @@
 from flask import Flask
 import json
 from flask_cors import CORS, cross_origin
-import satelliteLocation as sl
+import app.satelliteLocation as sl
 
 app = Flask(__name__)
 cors = CORS(app)
