@@ -2,7 +2,6 @@ API_KEY = "6GESWN-ABKBH6-CFMN7U-4KDO"
 
 import requests
 import toml
-from pprint import pprint
 from sys import argv, exit
 from os import path
 from inspect import currentframe, getframeinfo
