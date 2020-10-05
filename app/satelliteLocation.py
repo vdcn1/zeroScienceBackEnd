@@ -13,11 +13,11 @@ API_KEY = "6GESWN-ABKBH6-CFMN7U-4KDO"
 frameinfo = getframeinfo(currentframe())
 
  
-config_sa = {observer_lat: -8.7832, observer_lng: -55.4915, observer_alt: 74.042, search_radius: 5}
-config_af = {observer_lat: -8.7832, observer_lng: 34.5085, observer_alt: 74.042, search_radius: 5}
-config_as = {observer_lat: 34.0479, observer_lng: 100.6197, observer_alt: 74.042, search_radius: 5}
-config_na = {observer_lat: 54.5260, observer_lng: -105.2551, observer_alt: 74.042, search_radius: 5}
-config_eu = {observer_lat: 34.0479, observer_lng: -00.6197, observer_alt: 74.042, search_radius: 5}
+config_sa = {"observer_lat": -8.7832, "observer_lng": -55.4915, "observer_alt": 74.042, "search_radius": 5}
+config_af = {"observer_lat": -8.7832, "observer_lng": 34.5085, "observer_alt": 74.042, "search_radius": 5}
+config_as = {"observer_lat": 34.0479, "observer_lng": 100.6197, "observer_alt": 74.042, "search_radius": 5}
+config_na = {"observer_lat": 54.5260, "observer_lng": -105.2551, "observer_alt": 74.042, "search_radius": 5}
+config_eu = {"observer_lat": 34.0479, "observer_lng": -00.6197, "observer_alt": 74.042, "search_radius": 5}
 
 config = [config_sa,config_af,config_as,config_na,config_eu]
 
